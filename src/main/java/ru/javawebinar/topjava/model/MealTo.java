@@ -1,7 +1,6 @@
 package ru.javawebinar.topjava.model;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class MealTo {
     private final LocalDateTime dateTime;
@@ -41,7 +40,7 @@ public class MealTo {
         return calories;
     }
 
-    public String getFormattedDateTime() {
-        return DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(this.dateTime);
+    public LocalDateTime getDateTime() {
+        return dateTime;
     }
 }
